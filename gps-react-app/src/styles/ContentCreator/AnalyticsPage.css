@@ -1,0 +1,138 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    color: black;
+    font-size: 40px;
+    font-weight: normal;
+    margin: 0;
+}
+
+.year-dropdown {
+    display: grid;
+    grid-template-areas: "select .dropdown-icon";
+    align-items: center;
+    height: 35px;
+    min-width: auto;
+    margin: 8px 0 0 10px;
+    border: 1px solid lightgrey;
+    border-radius: 50px;
+    background-color: red;
+    padding: 0 15px;
+    font-size: 15px;
+    cursor: pointer;
+    line-height: 1.1;
+}
+
+option {
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    height: 35px;
+    width: 100%;
+    font-size: inherit;
+    color: black;
+    cursor: inherit;
+    line-height: inherit;
+    outline: none;
+}
+
+.add-icon {
+    height: 25px;
+    margin: 8px 10px 0 15px;
+    color: red;
+    transition: .3s;
+}
+
+.analytics hr {
+    border: 0.5px solid lightgrey;
+    margin:  15px 0;
+}
+
+.analytics .analytics-line {
+    margin: 0 0 15px 0;
+}
+
+.header label:nth-child(2) {
+    margin-left: auto;
+    margin-right: 10px;
+}
+
+.header label {
+    cursor: pointer;
+    transition: .3s;
+    background-color: #f2f2f2;
+    padding: 10px 15px;
+    margin-bottom: 15px;
+    border: 1px solid lightgrey;
+    border-radius: 20px;
+}
+
+.header label:hover {
+    opacity: 75%;
+}
+
+.header input {
+    display: inline-block;
+    margin-right: 5px;
+}
+
+.app-downloads {
+    display: grid;
+    grid-template-columns: 105px 15% auto auto;
+    align-items: center;
+}
+
+.app-downloads img {
+    height: 100px;
+    width: 100px;
+    border: 2px solid darkgrey;
+    border-radius: 25px;
+}
+
+.app-downloads p {
+    margin-left: 10px;
+    word-break: break-word;
+    color: black;
+    font-size: larger;
+    font-weight: normal;
+}
+
+.downloads-graph {
+    margin-left: auto;
+    background-color: #f2f2f2;
+    padding: 15px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.2);
+}
+
+.graph-title {
+    font-size: 10px;
+    color: grey;
+}
+
+.graph-numbers {
+    display: flex;
+    align-items: baseline;
+}
+
+.number {
+    font-size: 30px;
+    margin-right: 5px;
+}
+
+.raise {
+    font-size: 10px;
+    color: limegreen;
+}
+
+.graph {
+    width: 300px;
+}

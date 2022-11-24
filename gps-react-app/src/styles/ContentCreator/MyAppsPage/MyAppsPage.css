@@ -1,0 +1,110 @@
+.my-apps-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title {
+    color: black;
+    font-size: 40px;
+    font-weight: normal;
+}
+
+.add-icon {
+    height: 25px;
+    margin: 8px 10px 0 15px;
+    color: red;
+    transition: 0.3s;
+}
+
+.add-icon:hover, .search-button:hover {
+    opacity: 50%;
+}
+
+.my-apps-controls .search-field, .analytics-controls .search-field {
+    height: 35px;
+    width: 150px;
+    margin: 8px 0 0 auto;
+    padding: 0 15px;
+    background-color: #ffcccb;
+    border: 1px solid lightgrey;
+    font-size: 15px;
+    border-radius: 50px;
+}
+
+.search-button {
+    cursor: pointer;
+    height: 35px;
+    width: 35px;
+    margin: 8px 0 0 10px;
+    background-color: red;
+    border-radius: 50px;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    transition: .3s;
+    border: 1px solid lightgrey;
+}
+
+.search-button .button-icon {
+    height: 15px;
+    width: 15px;
+    margin-bottom: 4px;
+}
+
+.dropdown {
+    display: grid;
+    grid-template-areas: "select .dropdown-icon";
+    align-items: center;
+    height: 35px;
+    min-width: auto;
+    margin: 8px 0 0 10px;
+    border: 1px solid lightgrey;
+    border-radius: 50px;
+    background-color: red;
+    padding: 0 15px;
+    font-size: 15px;
+    cursor: pointer;
+    line-height: 1.1;
+}
+
+select {
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    margin: 0;
+    height: 35px;
+    width: 100%;
+    font-size: inherit;
+    color: white;
+    cursor: inherit;
+    line-height: inherit;
+    outline: none;
+}
+
+.dropdown-icon {
+    grid-area: dropdown-icon;
+    color: white;
+    padding-left: 10px;
+}
+
+.my-apps hr {
+    border: 0.5px solid lightgrey;
+    margin: 15px 0 30px 0;
+}
+
+.my-apps-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15em, 1fr));
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+}
+
+.loading-apps {
+    margin-top: 47px;
+    height:70px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

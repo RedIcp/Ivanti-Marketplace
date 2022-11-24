@@ -1,0 +1,195 @@
+.container {
+    display: block;
+}
+
+input[type="file"] {
+    display: none;
+}
+
+.app-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon {
+    height: 60px;
+    width: 60px;
+    border: 1.2px solid darkgrey;
+    border-radius: 15px;
+    margin: 0;
+}
+
+.container h1 {
+    color: black;
+    font-size: 40px;
+    font-weight: normal;
+    margin-left: 10px;
+    word-break: break-word;
+}
+
+.preview-button, .done-button {
+    cursor: pointer;
+    height: 35px;
+    width: 125px;
+    margin-left: 10px;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    border-radius: 50px;
+    transition: 0.3s;
+    border: none;
+}
+
+.preview-button:hover, .done-button:hover, .icon-controls label:hover, .screenshots-header label:hover, .delete-screenshot-button:hover, .app-file label:hover {
+    opacity: 50%;
+}
+
+.preview-button {
+    background-color: royalblue;
+    margin-left: auto;
+}
+
+.done-button {
+    background-color: lawngreen;
+}
+
+.container hr {
+    border: 0.5px solid lightgrey;
+    margin: 10px 0;
+}
+
+.container h2 {
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.app-icon, .app-name {
+    display: flex;
+    align-items: flex-start;
+}
+
+.icon-controls {
+    position: relative;
+    height: 150px;
+    width: 150px;
+}
+
+.icon-controls img {
+    height: 144px;
+    width: 144px;
+    border: 3px solid darkgrey;
+    border-radius: 37.5px;
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+}
+
+.icon-controls label {
+    position: absolute;
+    left: 75%;
+    bottom: 75%;
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+    background-color: royalblue;
+    border-radius: 50px;
+    color: white;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.icon-controls p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+label .edit-icon {
+    height: 12px;
+}
+
+.app-name {
+    display: flex;
+    align-items: center;
+}
+
+.app-name input {
+    height: 35px;
+    width: 150px;
+    padding: 0 15px;
+    background-color: #f2f2f2;
+    border: 1px solid dimgrey;
+    font-size: 15px;
+    border-radius: 50px;
+}
+
+.screenshots-header, .app-file {
+    display: flex;
+    align-items: flex-end;
+}
+
+.screenshots-header label, .app-file label {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.add-screenshot-icon, .add-file-icon {
+    height: 25px;
+    color: royalblue;
+}
+
+.loading-screenshot {
+    margin-left: 20px;
+    display: inline-block;
+}
+
+.screenshots-list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.screenshot {
+    position: relative;
+    height: 300px;
+    width: 30em;
+    margin: 10px 15px 0 0;
+}
+
+.screenshot img {
+    height: 300px;
+    width: 30em;
+    border-radius: 20px;
+}
+
+.delete-screenshot-button {
+    position: absolute;
+    left: 92%;
+    bottom: 88%;
+    cursor: pointer;
+    height: 25px;
+    width: 25px;
+    background-color: red;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    transition: 0.3s;
+    line-height: 15px;
+    padding: 0 0 5px 0;
+}
+
+.description-field {
+    width: calc(100% - 30px);
+    margin-top: 10px;
+    padding: 15px 15px 100px 15px;
+    background-color: #f2f2f2;
+    border: 1px solid dimgrey;
+    font-size: 15px;
+    border-radius: 20px;
+}

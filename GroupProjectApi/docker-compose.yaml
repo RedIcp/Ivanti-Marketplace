@@ -1,0 +1,27 @@
+version: "3.8"
+services:
+  mongodb:
+    image: mongo
+    container_name: mongodb
+    ports:
+      - "27017:27017"
+    volumes:
+    - data:/data
+    environment:
+      - MONGO_INITDB_ROOT_USERNAME= nrmvoid
+      - MONGO_INITDB_ROOT_PASSWORD=.Clarinet4rt.V0id.D
+
+  ivanti-AppMarket:
+    image: mongo-express
+    container_name: ivanti-AppMarket
+    restart: always
+    ports:
+      - "8081:8081"
+    environment:
+      - spring.data.mongodb.host=mongodb
+volumes:
+    data: {}
+
+networks:
+  default:
+    name: mongodb_network

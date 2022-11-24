@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal" created-in="IU-221.5591.52">
+    <data-source name="Ivanti" uuid="ba33b2e3-08bc-4339-bfb3-e426f2947d65">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="MONGO" exact-version="0" />
+      <schema-mapping />
+    </data-source>
+  </component>
+</project>

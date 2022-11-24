@@ -1,0 +1,53 @@
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1rem;
+}
+
+.review-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+input[type="radio"]{
+  display: none
+}
+
+.review-header .close {
+  padding-left: 3em;
+  padding-top: .30em;
+}
+.review-header .close:hover {
+  color: #000;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    flex-grow: 1;
+    padding-bottom: 1rem;
+}
+
+a, a:visited {
+    color: #fff;
+}
+
+input[type="text"],
+button,
+textarea {
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+  border-radius: 0.5rem;
+}
+
+label,
+button {
+  margin-top: 1rem;
+}
+
+button {
+  padding: 0.5rem;
+}
+

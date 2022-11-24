@@ -1,0 +1,314 @@
+@font-face {
+    font-family: 'Days One';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../../fonts/days-one-v14-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+    url('../../fonts/days-one-v14-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../../fonts/days-one-v14-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+    url('../../fonts/days-one-v14-latin-regular.woff') format('woff'), /* Modern Browsers */
+    url('../../fonts/days-one-v14-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+    url('../../fonts/days-one-v14-latin-regular.svg#DaysOne') format('svg'); /* Legacy iOS */
+}
+
+.app {
+    display: block;
+}
+
+.app-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon {
+    height: 60px;
+    width: 60px;
+    border: 1.2px solid darkgrey;
+    border-radius: 15px;
+    margin: 0;
+}
+
+.app h1 {
+    color: black;
+    font-size: 40px;
+    font-weight: normal;
+    margin-left: 10px;
+    word-break: break-word;
+}
+
+.category {
+    height: 33.6px;
+    width: auto;
+    margin: 0 10px;
+    text-align: center;
+    color: darkgrey;
+    background-color: inherit;
+    border: 1.2px solid darkgrey;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 50px;
+    line-height: 33.6px;
+    padding: 0 15px;
+    transition: 0.3s;
+}
+
+.edit-button, .delete-button, .version-button {
+    height: 35px;
+    width: 125px;
+    margin-left: 10px;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    border-radius: 50px;
+    line-height: 35px;
+    transition: 0.3s;
+}
+
+.category:hover, .edit-button:hover, .delete-button:hover, .version-button:hover {
+    opacity: 50%;
+}
+
+.edit-button {
+    background-color: royalblue;
+    margin-left: auto;
+}
+
+.delete-button {
+    border: none;
+    line-height: initial;
+    margin-bottom: 15px;
+    background-color: red;
+}
+
+.app hr {
+    border: 0.5px solid lightgrey;
+    margin: 10px 0;
+}
+
+.version-content {
+    display: flex;
+    align-items: center;
+}
+
+.version-selector {
+    display: grid;
+    grid-template-areas: "select .dropdown-icon";
+    align-items: center;
+    height: 33px;
+    width: 43px;
+    border: 1px solid darkgrey;
+    border-radius: 50px;
+    background-color: inherit;
+    padding: 0 10px 0 15px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    line-height: 1.1;
+}
+
+.version-selector select {
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    height: 33px;
+    width: 100%;
+    font-size: inherit;
+    font-weight: inherit;
+    color: darkgrey;
+    cursor: inherit;
+    line-height: inherit;
+    outline: none;
+    padding-right: 5px;
+}
+
+.version-selector .dropdown-icon {
+    grid-area: dropdown-icon;
+    color: darkgrey;
+    padding: 0;
+}
+
+.version-button {
+    height: 35px;
+    width: auto;
+    background-color: darkgrey;
+    padding: 0 15px;
+}
+
+.menu-wrapper {
+    height: 320px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+}
+
+.menu {
+    height: 320px;
+    box-sizing: border-box;
+    white-space: nowrap;
+    overflow: inherit;
+    padding: 0;
+}
+
+.menu .item {
+    display: inline-block;
+    width: 30em;
+    height: 300px;
+    margin-right: 15px;
+}
+
+.menu .item:last-child {
+    margin-right: 0;
+}
+
+.menu .item img {
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+/* ARROWS
+.paddle {
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 30px;
+    background-color: inherit;
+    border: none;
+    color: dodgerblue;
+    transition: 0.3s;
+}
+
+.paddle:hover {
+    opacity: 50%;
+}
+
+.paddle-icon {
+    height: 15px;
+    transform: scale(1,4);
+}
+
+.left-paddle {
+    left: 0;
+}
+
+.right-paddle {
+    right: 0;
+}
+
+.hidden {
+    display: none;
+}
+*/
+
+.app h2{
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    margin: 0 15px 10px 0;
+}
+
+.ratings-header {
+    display: flex;
+    align-items: baseline;
+}
+
+.ratings-header .see-all-button {
+    margin: 0;
+}
+
+.overall-rating {
+    display: flex;
+    align-items: baseline;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: -15px;
+}
+
+.overall-rating p {
+    font-family: "Days One", "sans-serif";
+}
+
+.rating-number {
+    font-size: 75px;
+    margin-right: 10px;
+}
+
+.app-reviews{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px -15px 0;
+}
+
+.review-card{
+    padding: 15px;
+    width: 175px;
+    background-color: lightgrey;
+    border-radius: 20px;
+    display: flex;
+    font-size: 15px;
+    flex-direction: column;
+    margin: 0 15px 15px 0;
+}
+
+.add-review-card{
+    padding: 15px;
+    width: 100px;
+    height: 100px;
+    background-color: lightgrey;
+    border-radius: 100%;
+    display: flex;
+    font-size: 50px;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 15px 15px 0;
+}
+.add-review-card:hover{
+    background-color: #4F4746;
+    color: white;
+}
+
+.review-controls {
+    margin-left: auto;
+}
+
+.review-controls button:first-child {
+    margin-right: 5px;
+}
+
+.card-title, .card-stars {
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.card-title .text, .card-stars .stars{
+    font-weight: bold;
+    padding-right: 10px;
+}
+
+.card-title .date, .card-stars .nickname {
+    color: dimgrey;
+    margin-left: auto;
+    text-align: right;
+}
+
+.see-all-button, .review-card .reply-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    font-size: 15px;
+    color: dodgerblue;
+    padding: 0;
+    margin: auto 0 0 auto;
+    transition: 0.3s;
+}
+
+.see-all-button:hover, .review-card .reply-button:hover {
+    opacity: 50%;
+}
+
+
+

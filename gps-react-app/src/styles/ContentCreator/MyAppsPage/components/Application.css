@@ -1,0 +1,24 @@
+.application {
+    display: flex;
+    align-items: center;
+    transition: 0.3s ease-in-out;
+}
+
+.application:hover {
+    transform: scale(1.05);
+}
+
+.application img {
+    height: 100px;
+    width: 100px;
+    border: 2px solid darkgrey;
+    border-radius: 25px;
+}
+
+.application p {
+    margin-left: 10px;
+    word-break: break-word;
+    color: black;
+    font-size: larger;
+    font-weight: normal;
+}

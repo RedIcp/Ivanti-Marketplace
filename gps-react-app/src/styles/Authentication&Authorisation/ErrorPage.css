@@ -1,0 +1,26 @@
+.NotFound {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+    margin-top: 12vh;
+}
+
+.NotFound img {
+    width: 600px;
+}
+
+.NotFound p {
+    color: black;
+    font-weight: normal;
+    font-size: large;
+    margin: 30px 0 10px 0;
+}
+
+.NotFound .NotFoundLink {
+    color: rgb(0, 102, 204);
+    transition: 0.3s;
+}
+
+.NotFound .NotFoundLink:hover {
+    color: rgb(0, 128, 255);
+}
